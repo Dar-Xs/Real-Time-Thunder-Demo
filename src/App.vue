@@ -451,7 +451,7 @@ const isChrome = computed(() => {
       style="position: absolute; width: 100%; height: 100%"
     ></canvas>
     <canvas
-    class="thor"
+      class="thor"
       ref="canvasRef"
       style="position: absolute; width: 100%; height: 100%"
       @click="startAnimation"
@@ -466,7 +466,7 @@ const isChrome = computed(() => {
           color: white;
           backdrop-filter: blur(4px);
           background-color: rgba(0, 0, 0, 0.25);
-          padding: 1rem;
+          padding: 0.75rem 1rem;
           margin: 0;
           border-radius: 1rem;
           border: 1px solid #627388;
@@ -488,6 +488,13 @@ const isChrome = computed(() => {
         />
         2
         <button @click="animationSpeedExp = 0">reset</button>
+        <br />
+        <a href="https://github.com/Dar-Xs/Real-Time-Thunder-Demo" target="_blank">
+          <img
+            alt="GitHub Repo stars"
+            src="https://img.shields.io/github/stars/Dar-Xs/Real-Time-Thunder-Demo?logo=github"
+        /></a>
+
         <div v-if="!isChrome">
           动画有点奇怪？<br />使用
           <a
@@ -510,6 +517,6 @@ body {
   margin: 0;
 }
 .thor {
-  cursor: url('/thor.png') 24 16, pointer;
+  cursor: url("/thor.png") 24 16, pointer;
 }
 </style>
