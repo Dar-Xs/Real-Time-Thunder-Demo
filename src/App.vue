@@ -489,7 +489,10 @@ const isChrome = computed(() => {
         2
         <button @click="animationSpeedExp = 0">reset</button>
         <br />
-        <a href="https://github.com/Dar-Xs/Real-Time-Thunder-Demo" target="_blank">
+        <a
+          href="https://github.com/Dar-Xs/Real-Time-Thunder-Demo"
+          target="_blank"
+        >
           <img
             alt="GitHub Repo stars"
             src="https://img.shields.io/github/stars/Dar-Xs/Real-Time-Thunder-Demo?logo=github"
